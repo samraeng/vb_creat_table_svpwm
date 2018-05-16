@@ -12,7 +12,7 @@ Begin VB.Form table
    ScaleWidth      =   9045
    Begin VB.TextBox Text1 
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Segoe UI"
          Size            =   14.25
          Charset         =   222
          Weight          =   700
@@ -57,7 +57,7 @@ Begin VB.Form table
    Begin VB.CommandButton Command2 
       Caption         =   "PRINT STEP DOWN"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Segoe UI"
          Size            =   14.25
          Charset         =   222
          Weight          =   700
@@ -95,7 +95,7 @@ Begin VB.Form table
    Begin VB.CommandButton Command1 
       Caption         =   "PRINT STEP UP"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Segoe UI"
          Size            =   14.25
          Charset         =   222
          Weight          =   700
@@ -113,7 +113,7 @@ Begin VB.Form table
       BackStyle       =   0  'Transparent
       Caption         =   "TABLE NUMBER"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
+         Name            =   "Segoe UI"
          Size            =   14.25
          Charset         =   222
          Weight          =   700
@@ -161,30 +161,30 @@ Begin VB.Form table
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
       Caption         =   "NUM OF STEP"
-      Height          =   255
+      Height          =   375
       Left            =   2760
       TabIndex        =   12
-      Top             =   960
+      Top             =   840
       Width           =   1095
    End
    Begin VB.Label Label4 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
       Caption         =   "STOP"
-      Height          =   375
+      Height          =   495
       Left            =   1440
       TabIndex        =   11
-      Top             =   960
+      Top             =   840
       Width           =   1095
    End
    Begin VB.Label Label3 
       Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
       Caption         =   "Amplitude"
-      Height          =   255
+      Height          =   375
       Left            =   120
       TabIndex        =   10
-      Top             =   960
+      Top             =   840
       Width           =   1095
    End
    Begin VB.Line Line2 
@@ -234,8 +234,7 @@ Dim revers(55) As Double
 Dim angle2 As Double
 Dim x As Double
 Dim y
-'Dim start_num As Long
-'Dim stop_num As Long
+
 Dim step As Double
     ' Set CancelError is True
     CommonDialog1.CancelError = True
@@ -354,3 +353,6 @@ ErrHandler:
 End Sub
 
 
+Private Sub Form_Load()
+
+End Sub
